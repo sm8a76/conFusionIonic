@@ -1,0 +1,4 @@
+npm install cordova ionic -g
+ionic start conFusion sidemenu
+npm install json-server -g
+
