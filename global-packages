@@ -1,4 +1,6 @@
 npm install cordova ionic -g
 ionic start conFusion sidemenu
+ionic serve --lab
+
 npm install json-server -g
 
