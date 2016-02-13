@@ -80,19 +80,7 @@ angular.module('conFusion.controllers', [])
             $scope.baseURL = baseURL;
             $scope.tab = 1;
             $scope.filtText = '';
-            /*$scope.showDetails = false;
-            $scope.showMenu = false;
-            $scope.message = "Loading ...";*/
-            
-            /*menuFactory.query(
-                function(response) {
-                    $scope.dishes = response;
-                    $scope.showMenu = true;
-                },
-                function(response) {
-                    $scope.message = "Error: "+response.status + " " + response.statusText;
-                });*/
-    
+
             $scope.dishes = dishes;
 
                         
@@ -250,10 +238,10 @@ angular.module('conFusion.controllers', [])
     
                     }])
 
-.controller('AboutController', ['$scope', 'corporateFactory', 'baseURL', function($scope, corporateFactory, baseURL) {
+.controller('AboutController', ['$scope', 'leaders', 'baseURL', function($scope, leaders, baseURL) {
             
                     $scope.baseURL = baseURL;                
-                    $scope.leaders = corporateFactory.query();
+                    $scope.leaders = leaders;
                     console.log($scope.leaders);
             
                     }])
