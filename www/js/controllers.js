@@ -75,23 +75,25 @@ angular.module('conFusion.controllers', [])
     
     
 })
-.controller('MenuController', ['$scope', 'menuFactory', 'favoriteFactory', 'baseURL', '$ionicListDelegate', function($scope, menuFactory, favoriteFactory, baseURL, $ionicListDelegate) {
+.controller('MenuController', ['$scope', 'dishes', 'favoriteFactory', 'baseURL', '$ionicListDelegate', function($scope, dishes, favoriteFactory, baseURL, $ionicListDelegate) {
             
             $scope.baseURL = baseURL;
             $scope.tab = 1;
             $scope.filtText = '';
-            $scope.showDetails = false;
+            /*$scope.showDetails = false;
             $scope.showMenu = false;
-            $scope.message = "Loading ...";
+            $scope.message = "Loading ...";*/
             
-            menuFactory.query(
+            /*menuFactory.query(
                 function(response) {
                     $scope.dishes = response;
                     $scope.showMenu = true;
                 },
                 function(response) {
                     $scope.message = "Error: "+response.status + " " + response.statusText;
-                });
+                });*/
+    
+            $scope.dishes = dishes;
 
                         
             $scope.select = function(setTab) {
@@ -242,9 +244,6 @@ angular.module('conFusion.controllers', [])
 .controller('IndexController', ['$scope', 'dish', 'leader', 'promotion', 'baseURL', function($scope, dish, leader, promotion, baseURL) {
                                         
                         $scope.baseURL = baseURL;
-                        $scope.showDish = false;
-                        $scope.message="Loading ...";
-
                         $scope.leader = leader;
                         $scope.dish = dish;
                         $scope.promotion = promotion;
