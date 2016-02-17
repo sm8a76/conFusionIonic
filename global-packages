@@ -4,3 +4,21 @@ ionic serve --lab
 
 npm install json-server -g
 
+
+
+### Building and Deploying to Android Emulator
+
+# type the following to prepare the icon and splash screen images for different screen resolutions and densities:
+ionic resources
+
+# add the Android platform to your app by typing the following at the prompt:
+ionic platform add android
+
+#build the app for the Android platform as follows
+ionic build android
+
+#Finally, you can deploy the app to the Android emulator by typing the following at the prompt:
+ionic emulate android
+
+#Connect your Android device to the computer. Then, at the command prompt, type the following:
+ionic run android
