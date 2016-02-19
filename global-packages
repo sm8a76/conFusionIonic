@@ -22,3 +22,24 @@ ionic emulate android
 
 #Connect your Android device to the computer. Then, at the command prompt, type the following:
 ionic run android
+
+
+
+
+
+
+#Installing ngCordova
+bower install ngCordova --save
+
+#First, add the Cordova plugin for the local notifications by typing the following at the command prompt:
+ionic plugin add de.appplant.cordova.plugin.local-notification
+
+#Then, install the Cordova Toast plugin by typing the following at the prompt:
+ionic plugin add https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git
+
+
+#First, add the Cordova camera plugin by typing the following at the command prompt:
+ionic plugin add cordova-plugin-camera
+
+#Or use the following command at the command prompt, if your Cordova version is below 5.0:
+ionic plugin add org.apache.cordova.camera
