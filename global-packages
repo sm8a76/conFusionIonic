@@ -43,3 +43,6 @@ ionic plugin add cordova-plugin-camera
 
 #Or use the following command at the command prompt, if your Cordova version is below 5.0:
 ionic plugin add org.apache.cordova.camera
+
+#Cordova Plugin For Multiple Image Selection - implemented for iOS and Android 4.0 and above.
+ionic plugin add https://github.com/wymsee/cordova-imagePicker.git
